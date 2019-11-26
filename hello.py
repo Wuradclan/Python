@@ -36,7 +36,8 @@ print('        |'+' '*redge+'|')
 print('        |'+' '*redge+'|')
 print('        |'+'_'*redge+'|')
 
-changed
+changed 3
+
 
     
     
