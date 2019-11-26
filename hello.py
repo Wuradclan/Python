@@ -4,12 +4,12 @@
 # print(file1.closed)
 # print(file_stuff)
  
-# a= 10
-# a*=2
-# print (a)
-# b=15
-# b=a+b
-# print (b)
+a= 10
+a*=2
+print (a)
+b=15
+b=a+b
+print (b)
 
 # a=650
 # if a%7==0:
@@ -36,7 +36,7 @@ print('        |'+' '*redge+'|')
 print('        |'+' '*redge+'|')
 print('        |'+'_'*redge+'|')
 
-
+changed
 
     
     
