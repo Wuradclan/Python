@@ -45,6 +45,8 @@ class Points:
     
     def draw_it(self):
         # Should draw a circle where the particle is.
-        fill(0, 88, 115)
+        colorMode(HSB,360,100,100)
+        fill(200, 93, 77)
+        #fill(0, 88, 115)
         circle(self.x,self.y,self.sz)
         pass

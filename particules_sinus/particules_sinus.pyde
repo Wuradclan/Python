@@ -3,7 +3,7 @@ import points
 def setup():
     size(1500,500)
     global p,ps,s,x,y
-    d =50
+    d =25
     y = height/2
     ps = []
     s = sqrt(width**2+height**2)
@@ -14,7 +14,7 @@ def setup():
         # if i%2 == 0:
         #     p = points.Points(i,i,d)
         # else:
-        #     p = points.Points(i,height-i,d)
+        #     p = points.Points(i,height/2+i,d)
         ps.append(p)
 
 
@@ -23,6 +23,8 @@ def draw():
     background(0)
     fill(255)    
     stroke(255)
+    strokeWeight(2)
+    
     global p,ps
 
     #p.draw_it()
@@ -31,11 +33,12 @@ def draw():
             
         for i in range(len(ps)-1):
             di= dit(ps[i],ps[j])
-            m = map(di,0,800,100,0)
+            m = map(di,0,400,100,0)
             #print m
             colorMode(HSB,360,100,100)
-            stroke(200,100-m,m)
+            stroke(200,100-m,m,m)
             line(ps[i].x,ps[i].y,ps[j].x,ps[j].y)
+
         ps[j].movesin()
         ps[j].draw_it()
    
